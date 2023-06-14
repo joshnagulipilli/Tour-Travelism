@@ -1,0 +1,540 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    height: 100000px;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    height: 50px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 10000;
+    box-shadow: 0 0 5px black;
+}
+nav .logo{
+    color:  rgb(255, 0, 0) ;
+    font-size: 33px;
+    padding-left: 2vh;
+    font-family: 'League Gothic', sans-serif;
+    font-weight: 900;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 580;
+    letter-spacing: 1px;
+
+}
+nav ul li a:hover{
+    color:  rgb(255, 0, 0) ;
+ }
+.activeh{
+    color: rgb(255, 0, 0) ;
+ }
+nav .menu-bar i{
+    color:black;
+    font-size: 19px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+/* home div css  */
+#hid{
+    background: linear-gradient(rgba(244, 178, 102, 0.1),rgba(132, 233, 125, 0.1)), url("images/home-banner.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    height: 800px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.home-container{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    width: 800px;
+    height: 500px;
+}
+.home-container .home-title h4{
+    /* border: 2px solid red; */
+    font-family: 'League Gothic', sans-serif;
+    color: red;
+    font-size: 70px;
+}
+.home-container .home-title h6{
+    /* border: 2px solid red; */
+    font-size: 20px;
+}
+/* button css  */
+
+.Mybtn{
+    margin-top: 20px;
+    border: 2px solid red;
+    padding: 5px 20px;
+    padding-bottom: 7px;
+    font-size: 19px;
+    font-weight:600;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 10px red;
+}
+.Mybtn:hover{
+    background-color: transparent;
+    color:red;
+    box-shadow: 0 0 0 ;
+}
+.heading{
+    font-size: 60px;
+    padding-top: 60px;
+    color: red;
+    font-style: bold;
+    text-align: center;
+    font-family: 'League Gothic', sans-serif;
+}
+.heading1{
+    font-size: 50px;
+    padding-top: 40px;
+    color: red;
+    font-style: bold;
+    text-align: center;
+    font-family: 'League Gothic', sans-serif;
+}
+#b-id
+{
+    /* height: 750px; */
+    /* border: 2px solid red; */
+}
+#booking-id{
+    /* height: 500px; */
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.booking-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+.booking-container .booking1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    /* height: 200px; */
+    /* border: 2px solid red; */
+    margin: 3px;
+}
+.booking1 .b-hotel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 490px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px red;
+}
+.b-icon{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.b-icon i{
+    font-size: 140px;
+    color: red;
+}
+.booking-container .booking2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px red;
+
+}
+.booking2 .b-img{
+    width: 350px;
+    height: 350px;
+    
+}
+.b-img img{
+    width: 100%;
+    height: 100%;
+}
+.booking-container .booking3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        width: 550px;
+        margin: 3px;
+}
+.booking3 .b-travel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+    width: 490px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px red;
+}
+/* hotel css  */
+.hotelsection{
+    padding: 20px;
+    width: 100%;
+    margin: 40px auto;
+}
+.hotelsection ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.hotelsection ul li{
+    list-style: none;
+    background: rgb(239, 7, 7);
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 7px red;
+    padding: 8px 20px;
+    margin: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.hotelsection ul li:hover{
+    background: transparent;
+    color: red;
+    box-shadow: 0 0 0 transparent;
+    border: 2px solid red;
+}
+.hotelsection .itemBox{
+    width: 250px;
+    height: 300px;
+    box-shadow: 0 0 10px red;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+.itemBox .hotel-img{
+    width:100%;
+    /* border: 2px solid red; */
+    height: 70%;
+    border-radius: 5px;
+}
+.itemBox .hotel-img img{
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+.hotelsection .products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    /* flex-direction: column; */
+}
+
+/* travel packages css */
+.packages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    /* border: 2px solid red; */
+}
+.packages .package-card{
+     width: 300px;
+     height: 321px;
+     margin:40px;
+     /* border: 2px solid red; */
+     box-shadow: 0 0 10px red;
+     padding: 10px;
+     border-radius: 5px;
+}
+.packages .package-card .image{
+    width: 100%;
+    height: 190px;
+    border-radius: 5px;
+    /* border: 2px solid red; */
+}
+.package-card .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+/* hitch-hiking css */
+.hh-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+.hh-container .hh-share,
+.hh-container .hh-get{
+    /* border: 2px solid red; */
+    box-shadow: 0 0 7px red;
+    border-radius: 12px;
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+    padding: 10px
+    
+}
+.hh-share .img,
+.hh-get .img{
+   height: 230px;
+   border-radius: 10px;
+}
+.hh-share .img img,
+.hh-get .img img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.hh-share .hh-content,
+.hh-get .hh-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hh-share .hh-content h2,
+.hh-get .hh-content h2{
+    color: red;
+    font-size: 45px;
+    font-weight: 200;
+    font-family: 'League Gothic', sans-serif;
+}
+
+/* get - cards */
+.share-cards{
+    margin-top:40px;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     flex-wrap:wrap;
+  }
+  .share-cards .card{
+   height:380px;
+   width:290px;
+   /* border:2px solid red; */
+   padding:20px;
+   box-shadow:0 0 10px red;
+   border-radius:7px;
+   
+  }
+  .share-cards .card h4{
+   font-size:25px;
+   font-family: 'League Gothic', sans-serif;
+   color:red;
+  }
+  .share-cards .card span{
+   font-size:20px;
+   font-family: 'Quicksand', sans-serif;
+   color:black;
+  }
+  .share-cards .card p {
+  text-align:center;
+  }
+
+
+  /* contact css */
+#contact-id{
+    background: url("images/backg2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 3px; */
+}
+.contact-container{
+    margin: 100px;
+    margin-top: 125px;
+    margin-bottom: 20px;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 40px 40px;
+    box-shadow:0 0 0.3em red;
+    /* padding-bottom: 0px; */
+}
+.contact-container .contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-container .contact-content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 15px;
+}
+.contact-content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+.contact-content .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+.contact-content .left-side .details i{
+    font-size: 30px;
+    color: red;
+    margin-bottom: 10px;
+}
+.contact-content .left-side .details .left-topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.contact-content .left-side .details .left-text-one,
+.contact-content .left-side .details .left-text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.contact-container .contact-content .right-side{
+    width: 75%;
+    margin-left: 55px;
+}
+.contact-content .right-side .right-topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color:  red;
+}
+.right-side .c-input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.right-side .c-input-box input,
+.right-side .c-input-box textarea{
+    outline: none;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+.right-side .message-box{
+    min-height: 110px;
+}
+.right-side .button button{
+    padding: 7px;
+    background-color:  red;
+    color: white;
+    border: 0px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 10px   red;
+}
+.right-side .button button:hover{
+    background: white;
+    color: red;    
+}
+.right-side .button{
+    display: inline-block;
+}
+.right-side .button a{
+    padding: 8px;
+}
+
+@media (max-width:1480px){
+    html,body{
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+     scroll-behavior: smooth;
+    }
+     nav .menu-bar i{
+         display: block;
+     }
+     #click:checked ~ .menu-bar i::before{
+         content: "\f00d";
+     }
+     nav ul{
+         position: fixed;
+         top:50px;
+         right: -100% ;
+         background: rgb(255, 255, 255);
+         width: 100%;
+         display: block;
+         text-align: center;
+         transition: all 0.3s ease;
+     }
+ 
+     #click:checked ~ ul{
+         right:0%;
+     }
+     
+     nav ul li{
+         margin:40px 0;
+     }
+     nav .menu-list{
+         overflow:hidden;
+     }
+     .booking-container{
+        flex-direction: column;
+     }
+    }
